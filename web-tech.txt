@@ -1,0 +1,1201 @@
+********************************************slip 1 ********************************************
+
+Q.1) Write the HTML code for generating the form as shown below. Apply the internal CSS to Following 
+form to change the font size of the heading to 6pt and change the color to red and also Change the 
+background color to yellow 
+
+<html> 
+<head> 
+<style type=”text/css”> 
+ Body 
+{ 
+ Background:yellow; 
+Color:red; 
+} 
+H1{ 
+ Color:red; 
+ Font-family:times new roman; 
+ Font-size:20pt; 
+ Text-align:center; 
+ Text-transform:uppercase; 
+ Background-color:blue; 
+ } 
+ Form 
+{ 
+ Border-style:dotted; 
+} 
+</style> 
+<form> 
+<h1>Project Management</h1> 
+Project Name<input type=text name=t1 placeholder=project name><br> 
+Assignned to<select> 
+ <option>Mr.Kale</option> 
+ <option>Mr.Kale</option> 
+ <option>Mr.Kale</option></select><br> 
+Start date<input type=date><br> 
+End date<input type=date><br> 
+Priority <input type=radio name=r1>High&nbsp;<input type=radio name=r1>avg&nbsp;<input 
+Type=radio name=r1>low<br> 
+Decription<textarea rows=10 cols=25></textarea> 
+</form></body> 
+</html> 
+
+********************************************Slip 2 ********************************************
+
+Q.2) Create HTML5 page with following specifications [15] 
+i) Title should be about your City. 
+ii) Color the background by Pink color. 
+iii) Place your city name at the top of page in large text and in blue color. 
+iv) Add names of the landmarks in your city, each in different color, style and font 
+v) Add any image at the bottom. (Use inline CSS to format the web page) 
+<HTML> 
+<HEAD><TITLE><CENTER>My CITY</CENTER></TITLE></HEAD> 
+<body style="background-color:red"> 
+<h1 style="color:blue;">Nashik Maharashtra</h1> 
+<p style="background:yellow;color:blue;text-decoration:overline;borderstyle:solid;borderwidth:5px;">Landmarks</p><br> 
+<h2 style="font-family:Berlin Sans FB;font-style:italic;color:yellow;borderstyle:dashed;bordercolor:red;">Kalaram Temple</h2><BR> 
+<h2 style="font-family:arial;font-style:bold;color:pink;border-style:dotted;bordercolor:black;">Godavri 
+River</h2><BR> 
+<h2 style="font-familyTimes new roman;font-style:italic;border-style:dashed;bordercolor:red;">Kalaram 
+Temple</h2><BR> 
+<IMG SRC="Desert.jpg" WIDTH="400" HEIGHT="400" ALT="IMAGE CANNOT BE DISPLAYED"> 
+</body> 
+</HTML> 
+
+********************************************Slip 3 ********************************************
+
+Q.3) Write a program using html with following CSS specifications- [15] 
+i. The background colour of the company name should be in green. 
+ii. The text colour of the company name should be red. 
+iii. The heading should be large –with font ‘’comic sans ms’’
+iv. The description of the company should be displayed in blue color in a paragraph. 
+<HTML> 
+<HEAD><TITLE><CENTER>My CITY</CENTER></TITLE></HEAD> 
+<body> 
+<h1 style=”background:yellow;color:red;text-align:center;font-family:Comic Sans 
+MS”>Infosys</h1><br> 
+<p style=”color:blue;border-style:dotted;border-color:black”>Infosys Limited is an Indian 
+Multinational information technology company that provides business consulting, information 
+Technology and outsourcing services. The company was founded in Pune and is headquartered in 
+Bangalore.[5] Infosys is the second-largest Indian IT company, after Tata Consultancy Services, by 
+2020 revenue figures, and the 602nd largest public company in the world, according to the Forbes 
+Global 2000 ranking.[6] 
+On 24 August 2021, Infosys became the fourth Indian company to reach $100 billion in market 
+Capitalization.</p> 
+</body> 
+</HTML> 
+
+Slip 4 
+
+Q.4) Write a HTML code, which generate the following output 
+<html> 
+<body> 
+<table border=5> 
+<caption>List of Books</caption> 
+<tr><td rowspan=2>Item No</td><td rowspan=2>Name</td><td colspan=2>Price</td> 
+<tr><td>rs</td> <td>paise</td></tr> 
+ </tr> 
+<tr><td>1</td><td>python</td><td>500</td><td>50</td></tr> 
+<tr><td>2</td><td>Java</td><td>345</td><td>00</td></tr> 
+</table></body></html> 
+
+********************************************Slip 7********************************************
+
+Q.7) Design HTML 5 Page Using CSS Which Displays the following Navigation Bar 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+#ul-nb { 
+List-style: none; 
+Margin:0; 
+Padding:0; 
+Overflow: hidden; 
+ Background-color: grey; 
+} 
+#ul-nb li { 
+Float:left; 
+padding:15px; 
+Text-align: center; 
+Margin-left:10px; 
+} 
+.active { 
+ Background-color: white; 
+} 
+</style> 
+</head> 
+<body> 
+<ul id=”ul-nb”> 
+ <li><a class=”active” href=”#”>Home</a></li> 
+<li><a href=”#”>Java</a></li> 
+<li><a href=”#”>HTML</a></li> 
+<li><a href=”#”>CSS</a></li> 
+</ul> 
+</body> 
+</html> 
+
+********************************************Slip 8******************************************** 
+
+Q.8) Design an HTML form to accept two strings from the user. Write a PHP script for the 
+Following. 
+a. Find whether the small string appears at the start of the large string. 
+b. Find the position of the small string in the big string. 
+c. Compare both the string for first n characters, also the comparison should not be case 
+sensitive. 
+PHP CODE:- 
+<?php 
+$s1=$_POST[‘str1’]; 
+$s2=$_POST[‘str2’];
+if(strpos($s2,$s1)) 
+{ 
+ Echo “$s1 is present at beginning at $s2<br>”; 
+} 
+Else 
+{ 
+ Echo “$s1 is no present at the beginning of $s2<br>”; 
+} 
+$z=strpos($s2,$s1); 
+Echo “position of $1 in $s2 is $z<br>”; 
+$z=strncmp($s1,$s2,3); 
+If($z==0) 
+{ 
+ Echo “both string matches 3 char”; 
+} 
+Else 
+{ 
+ Echo “sring not match”; 
+} 
+?> 
+HTML CODE :- 
+<html> 
+<body> 
+<form action=”setb1.php” method=post> 
+Enter first string :<input type=’text’ name=’str1’><br> 
+Enter second string :<input type=’text’ name=’str2’><br> 
+<input type=submit value=ok> 
+</form> 
+</body> 
+
+********************************************Slip 9********************************************
+
+Q.9) Write a PHP script for the following: Design a form having a text box and a drop down list 
+Containing any 3 separators(e.g. #, |, %, @, ! or comma) accept a strings from the user and also a 
+Separator. 
+a. Split the string into separate words using the given separator. 
+b. Replace all the occurrences of separator in the given string with some other separator. 
+c. Find the last word in the given string 
+PHP CODE:- 
+<?php 
+ $string1=$_POST[‘string1’]; 
+ $separater=$_POST[‘separator’]; 
+ $choice=$_POST[‘choice’]; 
+ $new_separater=$_POST[‘newsep’];//only for second case 
+ Echo”originonal String is=$string1.<br>”; 
+ Switch($choice) 
+{ 
+ Case 1: 
+ $sep_string=explode($separater,$string1); 
+ Echo”separated string is=>”; 
+ Print_r($sep_string); 
+ Break; 
+ Case 2: 
+ $z=str_replace($separater,$new_separater,$string1); 
+ Echo “replaced string is”.$z; 
+ Break; 
+ Case 3: 
+ $lws=strrpos($string1,’ ‘)+1; 
+ $last=substr($string1,$lws); 
+ Echo $last; 
+ } 
+?> 
+HTML CODE :- 
+<html> 
+ <body> 
+ <form action=secondprog.php method=post> 
+ <label>Enter the string:*</label><br> 
+ <input type=’text’ name=’string1’><br><br> 
+ <label>choice the separator:*</label><br> 
+ <select name=”separator”> 
+ <option value=””>[select]</option> 
+ <option value=”#”>#</option> 
+ <option value=”%”>%</option> 
+ <option value=”,”>,</option> 
+ <option value=”!”>!</option> 
+ </select><br><br> 
+ <input type=’radio’ name=”choice” value=1>separate string<br> 
+ <input type=’radio’ name=”choice” value=2>replace separator 
+<!—for replacement of separator we need another dropdownlist  
+ <select name=”newsep”> 
+ <option value=””>[select]</option> 
+ <option value=”#”>#</option> 
+ <option value=”%”>%</option> 
+ <option value=”,”>,</option> 
+ <option value=”!”>!</option> 
+ </select><br> 
+ <input type=’radio’ name=”choice” value=3>Get the last word of String<br> 
+ <br><input type=submit value=ok> 
+ <br><input type=reset value=cancel> 
+ </form> 
+</body> 
+</html> 
+
+********************************************Slip 10********************************************
+
+Q.10) Write a script to accept two integers(Use html form having 2 textboxes). 
+Write a PHP script to, 
+a. Find mod of the two numbers. 
+b. Find the power of first number raised to the second. 
+c. Find the sum of first n numbers (considering first number as n) 
+d. Find the factorial of second number. 
+(Write separate function for each of the above operations.) 
+PHP CODE:- 
+<?php 
+Function mod($x,$y) 
+{ 
+ $z=$x%$y; 
+Echo “mod value of $x & $y is $z<br>”; 
+} 
+Function power($x, $y) 
+{ 
+ $f= 1; 
+ $n1 = $y; 
+ While($n1 > 0) 
+{ 
+ $f= $f * $x; 
+ $n1--; 
+} 
+ Echo “$x raised to the power $y = $f <br>”; 
+} 
+Function sum($x) 
+{ 
+ $sum=0; 
+ $i=1; 
+ While($i<=$x) 
+{ 
+ $sum=$sum+$i; 
+ $i++; 
+ } 
+echo “sumof first $x number is $sum<br>”; 
+} 
+Function fact($y) 
+{ 
+ $i=1;$f=1; 
+ While($i<=$y) 
+{ 
+ $f=$f*$i; 
+ $i++; 
+} 
+Echo “factorial of $y is $f”; 
+ } 
+$x=$_POST[‘t1’]; 
+$y=$_POST[‘t2’]; 
+Mod($x,$y); 
+ Power($x,$y); 
+Sum($x); 
+Fact($y); 
+?> 
+HTML CODE :- 
+<html> 
+<body> 
+<form action=”seta1.php” method=post> 
+Enter first number<input type=text name=t1><br> 
+Enter second number<input type=text name=t2> 
+<input type=submit value=display></form></body></html> 
+
+********************************************Slip 11 ********************************************
+
+Q.11) Create a button with different style (Secondary, Primary, Success, Error, Info, Warning, Danger) using 
+BootStrap. 
+<!DOCTYPE html> 
+<html lang=”en”> 
+<head> 
+<title>Bootstrap Example</title> 
+<meta charset=”utf-8”> 
+<meta name=”viewport” content=”width=device-width, initial-scale=1”> 
+<link rel=”stylesheet” 
+Href=https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css> 
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js></script> 
+<script 
+Src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js></script> 
+<script 
+Src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js></script> 
+</head> 
+<body> 
+<div class=”container”> 
+<h2>Button Styles</h2> 
+<button type=”button” class=”btn”>Basic</button> 
+<button type=”button” class=”btn btn-primary”>Primary</button> 
+<button type=”button” class=”btn btn-secondary”>Secondary</button> 
+<button type=”button” class=”btn btn-success”>Success</button> 
+<button type=”button” class=”btn btn-info”>Info</button> 
+<button type=”button” class=”btn btn-warning”>Warning</button> 
+<button type=”button” class=”btn btn-danger”>Danger</button> 
+<button type=”button” class=”btn btn-dark”>Dark</button> 
+<button type=”button” class=”btn btn-light”>Light</button> 
+<button type=”button” class=”btn btn-link”>Link</button> 
+</div></body></html> 
+
+********************************************Slip 12 ********************************************
+
+Q.12) Write a PHP script for the following: Design a form to accept two numbers from the user. Give options 
+to choose the arithmetic operation (use radio buttons). Display the result on the next Form. (Use the 
+concept of function and default parameters. Use ‘include’ construct or require Statement) 
+HTML CODE :- 
+<html> 
+<body> 
+<form name=”f1” action=”setb1.php” method=”POST”> 
+Enter the 1st number<input type=”text” name=”n1”> 
+<br>Enter 2nd number<input type”text name=”n2”> 
+<br>Addition<input type=radio name=radio value=”a”> 
+<br>Subtraction<input type=radio name=radio value=”s”> 
+<br>Multiplication<input type=radio name=radio value=”m”> 
+<br>Division<input type=”radio” name=”radio” value=”d”> 
+<br><input type=”submit” value=”Answer”> 
+</form> 
+</body> 
+</html> 
+PHP FILE 1 CODE:- 
+<?php 
+Function add($n1,$n2=10) 
+{ 
+ Return($n1+$n2); 
+} 
+Function sub($n2,$n1=3) 
+{ 
+ Return($n1-$n2); 
+} 
+Function mul($n1,$n2=5) 
+{ 
+ Return($n1*$n2); 
+} 
+function div($n1,$n2=3) 
+{ 
+ Return($n1/$n2); 
+} 
+?> 
+PHP FILE 2 CODE:- 
+<?php 
+Include(“setb12.php”); 
+$n1=$_POST[‘n1’]; 
+$n2=$_POST[‘n2’]; 
+$opt=$_POST[‘radio’]; 
+If($opt==’a’) 
+{ 
+ If($n1 && $n2) 
+ Echo”Answer”.add($n1,$n2); 
+ Elseif($n1) 
+ Echo”Answer”.add($n1); 
+ Elseif($n2) 
+ Echo”answer”.add($n2); 
+} 
+if($opt==’s’) 
+{ 
+ If($n1 && $n2) 
+ Echo”Answer”.sub($n1,$n2); 
+ Elseif($n1) 
+ Echo”Answer”.sub($n1); 
+ Elseif($n2) 
+ Echo”answer”.sub($n2); 
+} 
+If($opt==’m’) 
+{ 
+ If($n1 && $n2) 
+ Echo”Answer”.mul($n1,$n2); 
+ Elseif($n1) 
+ Echo”Answer”.mul($n1); 
+ Elseif($n2) 
+ Echo”answer”.mul($n2); 
+} 
+If($opt==’d’) 
+{ 
+ If($n2==0) 
+ Echo”Division by zero is not possible”; 
+ Else 
+{ 
+ If($n1 && $n2) 
+ Echo”Answer”.div($n1,$n2); 
+elseif($n1) 
+ Echo”Answer”.div($n1); 
+ Elseif($n2) 
+ Echo”answer”.div($n2); 
+} 
+} 
+?>
+
+********************************************Slip 13********************************************
+
+Q.13) Write a PHP script to create a chess board using CSS on table cells.
+<html> 
+ <body> 
+ <h3>Chess Board using Nested For Loop</h3> 
+ <table width=”270px” cellspacing=”0px” cellpadding=”0px” border=”1px”> 
+<!—cell 270px wide (8 columns x 60px) --> 
+ <?php 
+ For($row=1;$row<=8;$row++) 
+{ 
+ Echo “<tr>”; 
+ For($col=1;$col<=8;$col++) 
+{ 
+ $total=$row+$col; 
+ If($total%2==0) 
+{ 
+ Echo “<td height=30px width=30px bgcolor=white></td>”; 
+} 
+ Else 
+{ 
+ Echo “<td height=30px width=30px bgcolor=black></td>”; 
+} 
+} 
+ Echo “</tr>”; 
+} 
+ ?> 
+ </table> 
+ </body> 
+ </html> 
+
+********************************************Slip 14 ********************************************
+
+Q.14) Create a container add row inside it and add 3 columns inside row using BootStrap. 
+<!DOCTYPE html> 
+<html lang=”en”> 
+<head> 
+<title>Bootstrap Example</title> 
+<meta charset=”utf-8”> 
+<meta name=”viewport” content=”width=device-width, initial-scale=1”> 
+<link rel=”stylesheet” 
+Href=https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css> 
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js></script> 
+<script 
+Src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js></script> 
+<script 
+Src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js></script> 
+</head> 
+<body> 
+<div class=”container”> 
+<div class=”row”> 
+<div class=”col-sm-4”> 
+<h3>Column 1</h3> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit…</p> 
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris…</p> 
+</div> 
+<div class=”col-sm-4”> 
+<h3>Column 2</h3> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit…</p> 
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris…</p> 
+</div> 
+<div class=”col-sm-4”> 
+<h3>Column 3</h3> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit…</p> 
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris…</p> 
+</div> 
+</div> 
+</div> 
+</body> 
+</html> 
+
+********************************************Slip 15 ********************************************
+
+Q.15) Design a form to accept string from the user and perform the following operations 
+a. To select first 5 words from the string 
+b. Convert the given string to lowercase and then to Title case. 
+c. Pad the given string with “*” from left and right both the sides. 
+d. Remove the leading whitespaces from the given string. 
+e. Find the reverse of given string. 
+HTML CODE:- 
+<html> 
+<body> 
+<form action=seta2_1.php method="POST"> 
+Enter string<input type=text name=txt1><br> 
+Enter your choice<br>&nbsp&nbsp 
+select first 5 words of string<input type="radio" name="op" value="five"> <br> 
+convertcase<input type="radio" name="op" value="convert"><br> 
+pad the string<input type="radio" name="op" value="pad"><br> 
+Remove leading white spaces<input type="radio" name="op" value="sp"><br> 
+reverse th string<input type="radio" name="op" value="rev"><br> 
+<input type=submit value="check"> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+ include("seta2_2.php"); 
+$x=$_POST['txt1']; 
+$y=$_POST['op']; 
+if($y=="five") 
+{ 
+ echo implode(' ', array_slice(explode(' ', $x), 0, 5)); 
+} 
+else 
+ if($y=="convert") 
+{ 
+ echo "lowercase of string".strtolower($x)."<br>"; 
+ echo "upper case of string is".strtoupper($x)."<br>"; 
+} 
+else 
+ if($y=="pad") 
+ { 
+$p=str_pad($x,15,"*",STR_PAD_BOTH); 
+ echo "padded string is".$p."<br>"; 
+} 
+else 
+ if($y=="sp") 
+{ 
+ echo "after removing white spaces from begining".ltrim($x); 
+} 
+else 
+ if($y=="rev") 
+{ 
+ echo "after reverse the string".strrev($x); 
+} 
+ else 
+ echo"invalid choice"; 
+?>
+
+********************************************Slip 16********************************************
+
+Q.16) Write a PHP script for the following: Design a form to accept the marks of 5 different 
+Subjects of a student, having serial number, subject name & marks out of 100. Display the 
+Result in the tabular format which will have total, percentage and grade. Use only 3 text 
+Boxes.(Use array of form parameters) 
+HTML CODE :- 
+<html> 
+<body> 
+<form name=”f1” method=”POST” action=”arrayc1.php”> 
+<center>MENU</center> 
+1.Insert an element in stack<br> 
+2.Delete element from stack<br> 
+3.Display the containts of stack<br> 
+ Enter your choice : 
+<input type=”text” name=”t1”><br> 
+<input type=”submit” name=”b1”> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+ $ch=$_POST[‘t1’]; 
+ $a=array(10,20,1,2,3,4,5,6); 
+ Switch($ch) 
+{ 
+ Case 1:echo”<br>ORIGINAL STACK IS :”; 
+ Foreach($a as $v) 
+{ 
+ Echo”$v\t”; 
+} 
+ Array_push($a,’7’,’66’); 
+ Echo”<br>After inserting an element stack is :”; 
+ Foreach($a as $v) 
+{ 
+ Echo”$v\t”; 
+} 
+ Break; 
+ Case 2:echo”<br>ORIGINAL STACK IS :”; 
+foreach($a as $v) 
+{ 
+ Echo”$v\t”; 
+} 
+ $e=array_pop($a); 
+ Echo”<br>After deleting an element stack is :”; 
+ Foreach($a as $v) 
+{ 
+ Echo”$v\t”; 
+} 
+ Break; 
+ Case 3:echo”<br>ORIGINAL STACK IS :”; 
+ Foreach($a as $v) 
+{ 
+ Echo”$v\t”; 
+} 
+ Break; 
+ Default :echo”Invalid choice”; 
+} 
+} 
+?>
+
+********************************************Slip 17 ********************************************
+
+Q.17) Write a PHP script to sort the following associative array : 
+Array(“Sagar”=>”31”,”Vicky”=>”41”,”Leena”=>”39”,”Ramesh”=>”40”) in 
+a) ascending order sort by Value 
+b) ascending order sort by Key 
+c) descending order sorting by Value 
+d) descending order sorting by Key 
+<?php 
+ $a=array(“Sagar”=>”31”,”Vicky”=>”41”,”Leena”=>”39”,”Ramesh”=>”40”); 
+ Echo “original array is :<br> “; 
+ Print_r($a); 
+ Echo “<br>ascending order sort by value<br>”; 
+ Asort($a); 
+print_r($a); 
+ Echo “<br>ascending order sort by Key<br>”; 
+ Ksort($a); 
+ Print_r($a); 
+ Echo “<br>descending order sorting by Value<br>”; 
+ Arsort($a); 
+ Print_r($a); 
+ Echo “<br>descending order sorting by key<br>”; 
+ Krsort($a); 
+ Print_r($a); 
+?>
+
+********************************************Slip 18 ********************************************
+
+ Q.18) Write a menu driven program to perform the following operations on an associative array 
+A. Reverse the order of each element’s key-value pair. 
+b. Traverse the element in an array in random order. 
+c. Convert the array elements into individual variables. 
+d. Display the elements of an array along with key 
+HTML CODE :- 
+<html> 
+<body> 
+<form action=”seta1.php” method=”POST”> 
+1.Reverse the order of each element’s key-value pair 
+<input type=”radio” name=”opt1” value=”o1”><br> 
+2.traverse the element in the random order 
+<input type=”radio” name=”opt1” value=”o2”><br> 
+3. Convert the array elements into individual variables. 
+<input type=”radio” name=”opt1” value=”o3”><br> 
+4.Display the elements of an array along with key. 
+<input type=”radio” name=”opt1” value=”o4”><br> 
+<input type=”submit” value=”ok”> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+ $a=array(‘one’=>’aa’,’two’=>’bb’,’three’=>’cc’,’four’=>’dd’,’five’=>’ee’); 
+ $opt=$_POST[‘opt1’]; 
+ If($opt==’o1’) 
+{ 
+Echo “origonal array is<br>”; 
+Print_r($a); 
+ Echo”the flip elements of array<br>”; 
+ $fp=array_flip($a); 
+ Print_r($fp); 
+} 
+Else if($opt==’o2’) 
+{ 
+ Echo”random order elements are”; 
+ Shuffle($a); 
+ Print_r($a); 
+} 
+If($opt==’o3’) 
+{ 
+extract($a); 
+Echo “after converting array into variables<br>”; 
+Echo $one.” “.$two.” “.$three.” “.$four.” “.$five; 
+} 
+Else if($opt==’o4’) 
+{ 
+ Echo”the elemnt of array with therer keys”; 
+ Print_r($a); 
+} 
+?>
+
+********************************************Slip 20 ********************************************
+
+Q.20) Write a menu driven program to perform the following operations on associative arrays: 
+A) Split an array into chunks 
+b) Sort the array by values without changing the keys. 
+c) Filter the even elements from an array. 
+HTML CODE :- 
+<html> 
+<body> 
+<form action=”setc_2.php” method=”post”> 
+<h2>Enter choice :</h2> 
+<input type=”radio” name=”ch” value=1> split the array into chunksr<br> 
+<input type=”radio” name=”ch” value=2> Sort array by values without changing key <br> 
+<input type=”radio” name=”ch” value=3> Filter even elements from array <br> 
+<input type=”submit” value=”SUBMIT”> <input type=”reset” value=”CLEAR”> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+Function is_even($var) 
+{ 
+If($var%2==0) 
+Return $var; 
+} 
+ $choice=$_POST[‘ch’]; 
+ $arr=array(‘a’=>1,’b’=>2,’c’=>3,’d’=>4,’e’=>5,’f’=>6,’g’=>7,’h’=>8); 
+ Switch($choice) 
+{ 
+ Case 1: 
+ Print_r(array_chunk($arr,2));break; 
+ Case 2: 
+ Asort($arr); 
+ Echo “Array in ascending order:<br>”; 
+ Print_r($arr); 
+ Arsort($arr); 
+ Echo “<br>Array in descending order:<br>”; 
+ Print_r($arr); 
+ Break; 
+ Case 3: 
+ Print_r(array_filter($arr,’is_even’)); 
+ Break; 
+} 
+?>
+
+
+********************************************Slip 21 ********************************************
+
+Q.21) Create an array of 15 high temperatures, approximating the weather for a spring month, then find the 
+average high temp, the five warmest high temps Display the result on the browser. 
+HTML CODE :- 
+<html> 
+<body> 
+<form name="f1" method="POST" action="arrayc1.php"> 
+<center>MENU</center> 
+1.Insert an element in queue<br> 
+2.Delete element from queue<br> 
+3.Display the contents of stack<br> 
+ Enter your choice : 
+<input type="text" name="t1"><br> 
+<input type="submit" value=ok> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+ $ch=$_POST['t1']; 
+ $a=array(10,20,1,2,3,4,5,6); 
+ switch($ch) 
+{ 
+ case 1:echo"<br>ORIGINAL QUEUE IS :"; 
+ foreach($a as $v) 
+ { 
+echo"$v\t"; 
+} 
+ array_unshift($a,'7'); 
+ echo"<br>After inserting an element queue is :"; 
+ foreach($a as $v) 
+{ 
+ echo"$v\t"; 
+} 
+ break; 
+ case 2:echo"<br>ORIGINAL QUEUE IS :"; 
+ foreach($a as $v) 
+{ 
+ echo"$v\t"; 
+} 
+ array_shift($a); 
+ echo"<br>Queue after deleting one element : "; 
+ foreach($a as $v) 
+{ 
+ echo"$v\t"; 
+} 
+ break; 
+ case 3:echo"<br>ORIGINAL QUEUE IS :"; 
+ foreach($a as $v) 
+{ 
+ echo"$v\t"; 
+} 
+ break; 
+ default :echo"Invalid choice"; 
+} 
+?>
+
+********************************************Slip 22 ********************************************
+
+Q.22) Write a menu driven program to perform the following queue related operations 
+a) Insert an element in queue 
+b) Delete an element from queue 
+c) Display the contents of queue 
+ <?php 
+//Create an array of 15 Fahrenheit high temperatures for a spring month. 
+$highTemps = array( 
+ 68, 70, 72, 58, 60, 79, 82, 73, 75, 77, 73, 58, 63, 79, 78,); 
+ //Get number of temps. 
+$count = count($highTemps); 
+ //Get a total of all temps. 
+$total = 0; 
+foreach ($highTemps as $h){ 
+ $total += $h; 
+} 
+ //Calculate average. 
+$avg = round($total / $count); 
+ //Send data to the browser. &amp;deg; is the ASCII code for the degree sign. 
+echo "<p>The average high temperature for the month was $avg &deg;F.</p>\n"; 
+ //Sort the temps and get the top and bottom five. 
+//Use rsort to produce a descending sort. 
+rsort($highTemps); 
+//Pull out the top 5 temps. 
+$topTemps = array_slice($highTemps, 0, 5); 
+echo "<p>The warmest five high temperatures were: <br />\n"; 
+foreach($topTemps as $t) 
+{ 
+ echo "$t &deg;F <br/> \n"; 
+} 
+echo "</p>"; 
+?>
+
+********************************************Slip 23 ********************************************
+
+Q.23) Write a menu driven program to perform the following stack related operations: 
+a) Insert an element in stack 
+b) Delete an element from stack 
+c) Display the contents of stack 
+<html lang="en" dir="ltr"> 
+ <head> 
+ <meta charset="utf-8"> 
+ <title></title> 
+ </head> 
+ <body> 
+ <fieldset> 
+ <legend><h3>Enter Item Details :</h3></legend> 
+ <form class="" action="" method="post"> 
+ <center> 
+ <h3>Student Roll No : <input type="text" name="sno" value=""></h3> 
+ <h3>Student Name : <input type="text" name="sname" value=""></h3> 
+ <h3>Marsk[ 5 Subject] : <input type="text" name="marks" value="" 
+placeholder=" eg. 80,50,70,87,60"></h3> 
+ <input type="submit" name="submit" value="Submit"> 
+ </center> 
+ </form> 
+ </fieldset> 
+ </body> 
+</html> 
+<?php 
+ if(isset($_POST['submit'])){ 
+ $sno = $_POST['sno']; 
+ $sname = $_POST['sname']; 
+ $marks = explode(",",$_POST['marks']); 
+ $total=0; 
+ $cnt = count($marks); 
+for($i=0; $i<$cnt; $i++) 
+{ 
+ $total = $total + $marks[$i]; 
+} 
+ $per = $total/$cnt; 
+ if($per>=80){ 
+ $grade='A'; 
+} 
+ else if($per>=60){ 
+ $grade = 'B'; 
+} 
+ else if($per>=40){ 
+ $grade = "C"; 
+} 
+ else { 
+ $grade = "Fail"; 
+} 
+ echo "<table align=center border=1 width='100%'>"; 
+ echo "<tr> 
+ <th> Roll No </th> 
+ <th> Name </th> 
+ <th> Sub1 </th> 
+ <th> Sub2 </th> 
+ <th> Sub3 </th> 
+ <th> Sub4 </th> 
+ <th> Sub5 </th> 
+ <th> Total </th> 
+ <th> Percentage </th> 
+ <th> Grade </th> 
+ </tr>"; 
+ echo "<tr> 
+ <td> $sno </td> 
+ <td> $sname </td> 
+ <td> $marks[0] </td> 
+ <td> $marks[1] </td> 
+ <td> $marks[2] </td> 
+ <td> $marks[3] </td> 
+ <td> $marks[4] </td> 
+ <td> $total </td> 
+ <td> $per </td> 
+ <td> $grade </td> 
+ </tr>"; 
+ echo "</table>"; 
+} 
+?>
+
+********************************************Slip 24 ********************************************
+
+ Q.24) Write a PHP program to read two file names from user and append content of first file into second 
+file. 
+HTML CODE :- 
+<html> 
+<body> 
+<form action="file1.php" method="POST"> 
+Enter 1st file name 
+<input type="text" name=txt1><br> 
+Enter 2nd file name 
+<input type="text" name=txt2><br> 
+Append <input type="radio" name="opt1" value="o"> 
+<input type="submit" value="ok"> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+ $f1=$_POST['txt1']; 
+ $f2=$_POST['txt2']; 
+ $file1=fopen($f1,"r")or exit("cant open file"); 
+ echo "hello"; 
+ $file2=fopen($f2,"a+")or exit("cant open file"); 
+while(!feof($file1)) 
+{ 
+ $data=fread($file1,filesize($f1)); 
+ fwrite($file2,$data); 
+} 
+echo "file appended"; 
+fclose($file1); 
+fclose($file2); 
+?>
+
+********************************************Slip 25 ********************************************
+
+Q.25) Write a menu driven program to perform various file operations. Accept filename from 
+user. [15] 
+a) Display type of file. 
+b) Display last modification time of file 
+c) Display the size of file 
+d) Delete the file 
+HTML CODE :- 
+<html> 
+<form action="setc1.php" method="post"> 
+Enter file name<input type="text" name="file"><br> 
+<input type="radio" name="b" value="1">1.DISPLAY TYPE OF FILE<br> 
+<input type="radio" name="b" value="2">2.DISPLAY LAST ACCESSED TIME<br> 
+<input type="radio" name="b" value="3">3.DISPLAY SIZE OF FILE<br> 
+<input type="radio" name="b" value="4">4.DELETE THE FILE 
+<input type="submit" name="submit" value="submit"><br> 
+</form> 
+</html> 
+PHP CODE :- 
+<?php 
+$file=$_POST['file']; 
+$c=$_POST['b']; 
+switch($c) 
+{ 
+ case 1 : 
+ $t=filetype($file); 
+ echo "type of file is :$t"; 
+ break; 
+ case 2: 
+ $a=fileatime($file); 
+ echo "last accessed time of file is :$a<br>"; 
+ echo "Last access time".date("F d Y H:i:s.",fileatime($file)); 
+ break; 
+ case 3: 
+ $size=filesize($file); 
+ echo "the size of file is:$size"; 
+ break; 
+ case 4: 
+ if(unlink($file)) 
+ echo "file is deletd"; 
+else 
+ echo "file not deleted"; 
+ default:"invalid choice"; 
+} 
+?>
+
+********************************************Slip 26 ********************************************
+
+Q.26)Consider the following entities and their relationship. [15] 
+Doctor ( doc_no, dname, address ,city ,area) 
+Hospital (hosp_no, hname, hcity) 
+Doctor-Hospital related with many-one relationship. 
+Create a RDB in 3NF for above and solve the following. 
+Using above database write a script in PHP to print the Doctor visiting to the Hospital in tabular format. 
+Accept Hospital name from user. 
+HTML CODE :- 
+<HTML> 
+ <BODY> 
+ <form name="f1" method="POST" action="db_a_2.php"> 
+ <form name="f1" method="POST" action="hos.php"> 
+ <br> <b>Enter the Hospital NAME:</b> 
+ <input type="text" name="t1"> 
+ <br> <br> 
+ <input type="submit" name="b1" > 
+ </form> 
+ </BODY> 
+</HTML> 
+PHP CODE :- 
+<?php 
+$conn=pg_connect("host=localhost port=5432 dbname=stud user=postgres password=123456"); 
+if(!$conn) 
+{ 
+echo("An error.....in connection"); 
+} 
+else 
+{ 
+echo("connection succesfull"); 
+ $a=$_POST['t1']; 
+ echo("<table border='3' >"); 
+ echo("<tr><th> d_no</th><th> dnm</th><th> daddress</th><th> dcity</th><th> 
+area</th></tr>"); 
+ echo("<br>"); 
+ $s1=pg_query("select dno,dname,dadd,dcity,darea from doct,hosp where hosp.hno=doct.hno1 
+and hosp.hname='$a'") or die(pg_error()); 
+echo "hello"; 
+ while($r=pg_fetch_assoc($s1)) 
+{ 
+ echo "hello"; 
+ echo("<tr>"); echo("<td>"); 
+ echo $r['dno']; echo("</td><td>"); 
+ echo $r['dname']; echo("</td><td>"); 
+ echo $r['dadd']; echo("</td><td>"); 
+ echo $r['dcity']; echo("</td><td>") ; 
+ echo $r['darea']; echo("</td></tr>"); 
+} 
+ echo("</table>"); 
+} 
+?>
+
+********************************************Slip 27******************************************** 
+
+Q.27) Write a PHP program to read two file names from user and copy the content of first file into second 
+file. 
+HTML CODE :- 
+<html> 
+<body> 
+<form action="file1.php" method="POST"> 
+Enter 1st file name 
+<input type="text" name=txt1><br> 
+Enter 2nd file name 
+<input type="text" name=txt2><br> 
+<input type="submit" value="copy"> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+ $f1=$_POST['txt1']; 
+ $f2=$_POST['txt2']; 
+ $file1=fopen($f1,"r")or exit("cant open file"); 
+ $file2=fopen($f2,"w")or exit("cant open file"); 
+while(!feof($file1)) 
+{ 
+ $data=fread($file1,filesize($f1)); 
+ fwrite($file2,$data); 
+} 
+echo "file appended"; 
+fclose($file1); 
+fclose($file2); 
+?>
+
+********************************************Slip 28********************************************
+
+Q.28) Write a program to read a flat file “student.dat”, calculate the percentage and display the data from 
+file in tabular format.(Student.dat file contains rollno, name, OS, WT, DS, Python, 
+Java, CN ) 
+<?php 
+if(file_exists("stud.dat")) 
+{ 
+ $fp1=fopen("stud.dat","r"); 
+ $buf1=fread($fp1,filesize("stud.dat")); 
+ $temprecs=explode("\n",$buf1); 
+ $i=0; 
+ foreach($temprecs as $t) 
+ if(strlen($t)>0) 
+ $records[$i++]=explode(" ",$t); 
+ echo"<p>********Student Detalis******</p>"; 
+ echo "<table border=2>"; 
+echo"<tr><th>rollno</th><th>Name</th><th>OS</th><th>WT</th><th>DS</th><th>Python</th><t 
+h>Java</th><th>CN</th><th>ptage</th></tr>"; 
+ foreach($records as $rec) 
+{ 
+ echo "<tr>"; 
+ $k=1; 
+ $tot=0; 
+ foreach($rec as $f) 
+{ 
+ printf("<td>%s</td>",$f); 
+ $k++; 
+ if($k>3) 
+ $tot=$tot+$f; 
+} 
+ $ptage=$tot/6.0; 
+ printf("<th>%.2f</th><br>",$ptage); 
+} 
+ echo"</table>"; 
+ fclose($fp1); 
+}//if 
+else 
+echo " file not exists"; 
+?>
+
+********************************************Slip 29*********************************************** 
+
+Q.29) Consider the following entities and their relationships [15] 
+Event (eno , title , date ) 
+Committee ( cno , name, head , from_time ,to_time , status) 
+Event and Committee have many to many relationship. Write a php script to accept title of event and 
+modify status committee as working. 
+HTML CODE :- 
+<html> 
+<body> 
+<form action="event.php" method=POST> 
+Enter the name of event<input type=text name="txt1"> 
+<input type=submit value=ok> 
+</form> 
+</body></html> 
+PHP CODE :- 
+<?php 
+$conn=pg_connect("host=localhost port=5433 dbname=ty22 user=postgres password=123456"); 
+if(!$conn) 
+{ 
+echo("An error.....in connection"); 
+} 
+else 
+{ 
+echo("connection succesfull"); 
+echo "<br>"; 
+$ename1=$_POST['txt1']; 
+$s1="update event,committee,ec set status='working' 
+ where event.eno=ec.fk_eno and 
+ committee.cno=ec.fk_cno and etitle='$ename1'"; 
+$result = pg_query($conn,$s1); 
+ if (!$result) 
+{ 
+ echo"ERROR....."; 
+ 
+} 
+ else 
+{ 
+ echo "record updated"; 
+} 
+} 
+?>
+
+*******************************************Slip 30***************************************
+
+Q.30) Consider the following entities and their relationships [15] 
+Student (Stud_id,name,class) 
+Competition (c_no,c_name,type) 
+Relationship between student and competition is many-many with attribute rank and year. Create a RDB in 
+3NF for the above and solve the following. Using above database write a script in PHP to accept a 
+competition name from user and display information of student who has secured 1st rank in that 
+competition 
+HTML CODE:- 
+<html> 
+<body> 
+<form action="student.php" method=POST> 
+Enter the name of competition<input type=text name="txt1"> 
+<input type=submit value=ok> 
+</form> 
+</body> 
+</html> 
+PHP CODE :- 
+<?php 
+$conn=pg_connect("host=localhost port=5432 dbname=stud user=postgres password=123456"); 
+if(!$conn) 
+{ 
+echo("An error.....in connection"); 
+} 
+else 
+{ 
+echo("connection succesfull"); 
+ $cname1=$_POST['txt1']; 
+$s1=pg_query("select stud1.sname from stud1,comp,sc 
+ where stud1.sno=sc.sno and 
+ comp.cno=sc.cno 
+ and comp.cname='$cname1' and sc.rank=1")or die(pg_error()); 
+ while($r=pg_fetch_assoc($s1)) 
+{ 
+ echo $r['sname']; 
+ } 
+ echo("</table>"); 
+} 
+?>
+
