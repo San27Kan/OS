@@ -85,7 +85,7 @@ Capitalization.</p>
 </body> 
 </HTML> 
 
-Slip 4 
+********************************************Slip 4 ********************************************
 
 Q.4) Write a HTML code, which generate the following output 
 <html> 
@@ -98,6 +98,74 @@ Q.4) Write a HTML code, which generate the following output
 <tr><td>1</td><td>python</td><td>500</td><td>50</td></tr> 
 <tr><td>2</td><td>Java</td><td>345</td><td>00</td></tr> 
 </table></body></html> 
+
+********************************************Slip-5********************************************
+
+Q5. Create following Bootstrap web layout design and change Title, add your personal information, educational information and job profile.
+
+<html lang="en">
+<head> <title>Bootstrap Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+<h1>My First Bootstrap Page</h1> 36
+<p>Resize this responsive page to see the effect!</p> </div>
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<h3>Personal Information</h3>
+<p>Add your personal information..</p>
+<p>...</p>
+</div>
+<div class="col-sm-4">
+<h3>Educational Information</h3>
+<p>Add your educational information....</p>
+<p>...</p>
+</div>
+<div class="col-sm-4">
+<h3>Job Profile</h3>
+<p>Add your job profile information.....</p>
+<p>...</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+********************************************Slip 6********************************************
+
+Q6.  Create following Bootstrap Web Layout Design and set Header background color Blue, add your College name, set Menu section background color green create menu About Us, In content section add college information, background color yellow, Footer section background color red, add address of college.	
+
+
+<html lang="en">
+<head> <title>Bootstrap Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class = 'container-fluid'>
+<div class = 'row bg-primary'>
+<h3>HEADER </h3>
+</div>
+<div class = 'row'>
+<div class = "col-md-4 bg-info" style = "height: 80%;">
+<h3>Menu </h3>
+</div>
+<div class = "col-md-8 bg-warning" style = "height: 80%;">
+<p>Pellentesqu</p>
+</div>
+</div>
+<div class = 'row bg-danger'>
+<h3>footer </h3>
+</div>
+</div>
+</body>
+</html>
+
 
 ********************************************Slip 7********************************************
 
